@@ -9,7 +9,7 @@ use Intervention\Image\Facades\Image;
 class SiteIdentyController extends Controller
 {
     public function site_identity(){
-        $identy = SiteIdenty::all()->first();
+        $identy = SiteIdenty::get()->first();
         return view('dashboard.siteIdenty.index', compact('identy'));
     }
 
